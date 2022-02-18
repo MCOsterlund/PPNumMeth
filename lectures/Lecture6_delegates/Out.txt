@@ -1,0 +1,5 @@
+hello
+fun()=7 should be equal to 7
+square(2)=4 should be equal 4
+f3(1,2,3)=9 should be equal 9
+a=1 should be 0 or 1<
