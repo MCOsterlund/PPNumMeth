@@ -1,0 +1,50 @@
+Testing of vector program.
+---TESTING BASIC VECTOR OPERATORS---
+Testing x=x...
+...Passed
+
+Testing x!=y...
+...Passed
+
+Testing x!=z...
+...Passed
+
+Testing y!=z...
+...Passed
+
+---TESTING BASIC VECTOR OPERATORS---
+Testing 1*x=x...
+...Passed
+
+Testing 1*y=y...
+...Passed
+
+Testing 1*z=z...
+...Passed
+
+Testing x+y+z...
+...Passed
+
+Testing x-y-z...
+...Passed
+
+Testing x-x...
+...Passed
+
+---TESTING COMPLICATED VECTOR OPERATORS---
+Testing dot(x,x)...
+...Passed
+
+Testing dot(x,y)...
+...Passed
+
+Testing norm(x)...
+...Passed
+
+Testing cross(x,x)...
+...Passed
+
+Testing cross(x,y)=z...
+...Passed
+
+All tests passed
