@@ -1,8 +1,9 @@
+using System;
 using static System.Console;
 using static System.Math;
 
 class main{
-	static void Main(){
+	static int Main(){
 	WriteLine("Testing of vector program.");
 	int return_code=0;
 	bool test;
@@ -93,9 +94,11 @@ class main{
 	if(test) WriteLine("...Passed\n");
 	else{WriteLine("...Failed\n"); return_code +=1;}
 	
-	if(return_code==0);
-		Write("All tests passed\n");
-	else{Write("Tests failed\n",return_code); return return_code;}
+if(return_code==0)
+	Write("All tests passed\n");
+else
+	Write("{0} tests failed\n",return_code); 
+return return_code;
 			
 	}	
 }
