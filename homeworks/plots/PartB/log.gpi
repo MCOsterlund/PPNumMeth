@@ -4,6 +4,6 @@ set xlabel 'x'
 set ylabel 'y' 
 set title 'Gamma function' 
 set key left top 
-plot [-2:2] 'gamma.data.txt' index 0 using 1:2 with lines title 'Gamma',\ 
+plot 'gamma.data.txt' index 0 using 1:2 with lines title 'Gamma',\ 
 'gamma.tab.txt' using 1:2 with points pointtype 2 title 'tab' 
 
