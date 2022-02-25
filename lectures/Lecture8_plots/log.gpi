@@ -4,5 +4,5 @@ set xlabel 'x'
 set ylabel 'y' 
 set title 'error function' 
 set key left top 
-plot [-2:2] [-1:1] 'erf.data.txt' index 0 using 1:2 with lines title 'erf','erf.tab.txt' with points pointtype 2 title 'tab' 
+plot [-2:2] [-1:1] 'erf.data.txt' index 0 using 1:2 with lines title 'erf','erf.tab.txt' using 1:2 with points pointtype 2 title 'tab' 
 
