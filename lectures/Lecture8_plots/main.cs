@@ -13,7 +13,7 @@ class main{
 	}
 //pyxplot expects a table. We create this in our Main function
 	public static void Main(){
-		for(double x=-1;x<=1; x+=1.0/12) //DON'T DO THIS NORMALLY! Never for loop over af double.
+		for(double x=-1;x<=1; x+=1.0/8) //DON'T DO THIS NORMALLY! Never for loop over af double.
 			WriteLine($"{x} {erf(x)}");
 	}	
 
