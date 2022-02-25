@@ -10,7 +10,7 @@ erf.pyxplot.png: erf.data.txt erf.tab.txt Makefile
 	set title 'error function' \n\
 	set key left top \n\
 	plot [-2:2] [-1:1] '$<' index 0 using 1:2 with lines title 'erf',\
-	'erf.tab.txt' using 1:3 with points pointtype 2 title 'tab' \n\
+	'erf.tab.txt' with points pointtype 2 title 'tab' \n\
 	"| tee log.gpi | pyxplot
 
 erf.data.txt: main.exe
