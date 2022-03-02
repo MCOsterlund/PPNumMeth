@@ -1,0 +1,6 @@
+set terminal latex
+set output "gamma_gnu.tex"
+set size 0.6
+plot\
+ "out.gamma.txt" with lines title "$\Gamma(x)$"\
+,"tab.gamma.txt" with points title "$tabulated data$"\
