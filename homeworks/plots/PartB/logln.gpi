@@ -1,0 +1,8 @@
+set terminal png 
+set output 'lngamma.pyxplot.png' 
+set xlabel 'x' 
+set ylabel 'y' 
+set title 'Log of Gamma' 
+set key left top 
+plot 'gamma.data.txt' index 0 using 1:3 with lines title 'Log of Gamma' 
+
