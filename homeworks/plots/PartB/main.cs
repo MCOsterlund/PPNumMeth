@@ -5,7 +5,6 @@ using static System.Math;
 class main{
 
 	static double gamma(double x){
-		//Single precision gamma function (Gergo Nemes, from Wikipedia)
 		if(x<0)return PI/Sin(PI*x)/gamma(1-x);
 		if(x<9)return gamma(x+1)/x;
 		double lngamma=x*Log(x+1/(12*x - 1/x/10)) - x+Log(2*PI/x)/2;
@@ -13,7 +12,8 @@ class main{
 	}
 
 	static public void Main(){
-		for(double x=0;x<=4; x+=1.0/4)
+		double dx=1.0/64, shift=dx/2;
+		for(double x=-5+shift; x<=5; x+=dx)
 			WriteLine($"{x} {gamma(x)}");
 	}
 
