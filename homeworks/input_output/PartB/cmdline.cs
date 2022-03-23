@@ -2,7 +2,7 @@ using System;
 using static System.Console;
 using static System.Math;
 
-class main{
+class commandline{
 	public static void Main(string[] args){
 		foreach(var arg in args){
 			double x = double.Parse(arg);
