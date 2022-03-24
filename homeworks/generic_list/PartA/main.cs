@@ -16,7 +16,7 @@ public static void Main(){
 	}
 	for(int i=0;i<list.size;i++){
 		var numbers=list.data[i];
-		foreach(var number in numbers)WriteLine($"{number:e}");
+		foreach(var number in numbers)WriteLine($"{number: 0.00e+00;-0.00e+00}");
 		WriteLine();
 	}
 }
