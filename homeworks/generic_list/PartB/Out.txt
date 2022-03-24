@@ -1,1 +1,7 @@
-genlist`1[System.Int32]
+Printed list of numbers
+4
+76
+8983
+The second element has been removed. The new list is
+4
+8983

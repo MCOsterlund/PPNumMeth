@@ -10,7 +10,12 @@ public static void Main(){
 	list.push(4);
 	list.push(76);
 	list.push(8983);
-	WriteLine($"{list(1)}");
+	WriteLine("Printed list of numbers");
+	list.print();
+	
+	list.remove(1);
+	WriteLine("The second element has been removed. The new list is");
+	list.print();
 		}
 }
 

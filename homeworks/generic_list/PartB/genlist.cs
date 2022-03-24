@@ -1,6 +1,8 @@
+using static System.Console;
+
 public class genlist<T>{
 	public T[] data;
-	public int size=0, capacity=8;
+	public int size=0, capacity=1;
 	public genlist(){data=new T[capacity];}
 	public void push(T item){
 		if(size==capacity){
@@ -18,5 +20,9 @@ public class genlist<T>{
 				size--;
 			}
 		}
+	}
+	public void print(){
+		for(int i=0; i<size; i++){Write($"{data[i]}");
+		Write("\n");}
 	}
 }
