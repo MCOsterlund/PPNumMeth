@@ -3,10 +3,12 @@ set output 'gamma.complex.png'
 set xlabel 'Re(z)' 
 set ylabel 'Im(z)' 
 set zlabel 'Abs(z)' 
+set xtics -5,1,5 
+set ytics -5,1,5 
 set size 8 square 
 set grid 
 set view -30,30 
 set title 'Complex Gamma function' 
 set key below 
-plot 3d 'gamma.complex.txt' index 0 using 1:2:3 with surface col black fillcol blue title 'Complex Gamma' 
+plot 3d [-4:4] [-4:4] 'gamma.complex.txt' index 0 using 1:2:3 with surface col black fillcol blue title 'Complex Gamma' 
 
