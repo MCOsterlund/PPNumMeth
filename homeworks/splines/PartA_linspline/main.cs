@@ -4,14 +4,18 @@ using static System.Math;
 
 class main{
 	public static void Main(){
-		double[] x={0, 4, 5, 6};
-		double[] y={5, 4, 7, 5};
+		double[] x={0,1,2,3,4,5,6};
+		double[] y={0,1,4,9,16,25,36};
 		
-		double dx=1.0/16, shift=dx/2;
-		for(double n=0+shift; n<=x[x.Length-1]; n+=dx)
+
+
+		for(double n=0; n<=x[x.Length-1]; n+=0.1)
 			{	
+			double bin=linspline.binsearch(x,n);
 			double spline=linspline.linterp(x,y,n);
-			WriteLine($" {spline} ");
+			double integ=linspline.linterpInteg(x,y,n);
+			WriteLine($"{n} {bin} {spline} {integ}");
+			Error.WriteLine($"{integ}");
 			}
 	}
 }
