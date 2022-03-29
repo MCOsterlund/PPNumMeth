@@ -21,4 +21,4 @@ linspline.dll: linspline.cs
 	mcs -target:library -out:$@ $<
 
 clean:
-	rm -rf *.dll *.exe *.txt
+	rm -rf *.dll *.exe Out.txt *.png *.gpi

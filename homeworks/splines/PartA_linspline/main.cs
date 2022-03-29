@@ -15,7 +15,6 @@ class main{
 			double spline=linspline.linterp(x,y,n);
 			double integ=linspline.linterpInteg(x,y,n);
 			WriteLine($"{n} {bin} {spline} {integ}");
-			Error.WriteLine($"{integ}");
 			}
 	}
 }

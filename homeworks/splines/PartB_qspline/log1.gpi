@@ -1,0 +1,15 @@
+set terminal png 
+set output 'qspline1.png' 
+set xlabel 'x' 
+set ylabel 'y' 
+set yrange [-1:5] 
+set xrange [1:5] 
+set xtics 1,1,5 
+set ytics -1,1,5 
+set title 'Quadratic Spline: y equals 1' 
+set key left top 
+plot 'xones.txt' index 0 using 1:2 with lines linetype 1 title 'Quadratic spline',\ 
+'xones.txt' using 1:3 with lines linetype 2 title 'Integral',\ 
+'xones.txt' using 1:4 with lines linetype 3 title 'Derivative',\ 
+'tabvals.txt' using 1:3 with points pointtype 2 title 'Tab' 
+
