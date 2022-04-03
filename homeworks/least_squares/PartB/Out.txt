@@ -1,0 +1,6 @@
+Covariance matrix=
+   0.00101   0.000106 
+  0.000106    1.8e-05 
+Fitting Parameters=      4.95      0.171 
+The fitted halflife is: t_(1/2)=4.04828189712487 +/- 0.100412737658525
+The table half-life is given as: 3.6. The fitted halflife is within expected error: False

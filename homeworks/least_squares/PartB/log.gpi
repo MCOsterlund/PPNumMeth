@@ -1,0 +1,9 @@
+set terminal png 
+set output 'fit.pyxplot.png' 
+set xlabel 'Times [days]' 
+set ylabel 'Activity [Logarithmic scale]' 
+set title 'Least sqaures fit' 
+set key bottom left 
+plot 'input_clean_format.txt' index 0 using 1:2:3 with yerrorbars title 'Data points',\ 
+'fit.txt' using 1:2 with lines title 'fit' 
+
