@@ -1,0 +1,13 @@
+set terminal png 
+set output 'swaveplot.png' 
+set xlabel 'Distance' 
+set ylabel 'Wavefunction' 
+set title 'S-wave comparison' 
+set key right top 
+plot 'wfplot.txt' index 0 using 1:2 with lines title '1s Tab',\ 
+'wfplot.txt' index 0 using 1:3 with lines linetype 5 title '1s Numerical',\ 
+'wfplot.txt' index 0 using 1:4 with lines title '2s Tab',\ 
+'wfplot.txt' index 0 using 1:5 with lines linetype 5 title '2s Numerical',\ 
+'wfplot.txt' index 0 using 1:6 with lines title '3s Tab',\ 
+'wfplot.txt' index 0 using 1:7 with lines linetype 5 title '3s Numerical' 
+
