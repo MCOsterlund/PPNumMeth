@@ -27,8 +27,8 @@ class main{
         //Debug example
         vector yinit=new vector(0,-1); //initial values.
         var debug=new StreamWriter("debug.txt");
-        for(int i=0; i<=63; i++){
-            double t=i*1.0/15;
+        for(int i=0; i<=100; i++){
+            double t=i/(2*PI);
             vector sol=ODE.driver(dudtdt,a,yinit,t);
             debug.WriteLine($"{t} {sol[0]} {sol[1]} {-Cos(t)}");
         }
@@ -37,8 +37,8 @@ class main{
         //Scipy example
         vector y0=new vector(PI-0.1,0.0);
         var py_write=new StreamWriter("py_comp.txt");
-        for(int i=0; i<=63; i++){
-            double t=i/(2*PI);
+        for(int i=0; i<=100; i++){
+            double t=i*1.0/10;
             vector sol=ODE.driver(py_comp,a,y0,t);
             py_write.WriteLine($"{t} {sol[0]} {sol[1]}");
         }
