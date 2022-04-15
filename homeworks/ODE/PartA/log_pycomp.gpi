@@ -1,0 +1,10 @@
+set terminal png 
+set output 'py_comp.png' 
+set xlabel 't' 
+set ylabel 'Solution' 
+set title 'ODE solver: Python comparison' 
+set yrange[-4.5:3.5] 
+set key top right 
+plot 'py_comp.txt' index 0 using 1:2 with lines title 'Theta',\ 
+'py_comp.txt' index 0 using 1:3 with lines title 'Omega' 
+

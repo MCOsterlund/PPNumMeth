@@ -48,16 +48,18 @@ class main{
 
     public static void Main(){
 
+//Convergence checks
+    
     nconvergence();
     rconvergence();
+
+//Wavefunction plots
 
     int npoints=200;
     (matrix H, vector r, double dr)=H_calc(npoints);
 
     //Jacobi diagonalization
     (matrix e, matrix V)=jacobi.jacobi_cyclic(H);
-    //e.print("e=");
-    //V.print("V=");
 
     double[] realvals0=new double[npoints];
     double[] numvals0=new double[npoints];
