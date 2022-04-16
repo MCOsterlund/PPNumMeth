@@ -1,0 +1,10 @@
+-----REGULAR QUADRATURES----- 
+
+The integral of 1/Sqrt(x)=1.99996150007805. Should be 2. Number of steps: 8572
+The integral of Log(x)/Sqrt(x)=-3.99991705899915. Should be -4. Number of steps: 8604
+
+-----CLENSHAW-CURTIS TRANSFORMATION-----
+
+The integral of 1/Sqrt(x)=1.99999201046432. Should be 2. Number of steps: 16
+The integral of Log(x)/Sqrt(x)=-3.99987385646141. Should be -4. Number of steps: 96
+
