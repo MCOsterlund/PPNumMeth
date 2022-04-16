@@ -1,0 +1,10 @@
+Intgrals from 0 to 1 of various functions: 
+
+Sqrt(x)=0.666953909054655 
+
+1/Sqrt(x)=1.99996150007805 
+
+4*Sqrt(1-x^2)=3.14183457802727 
+
+Log(x)/Sqrt(x)=-3.99991705899915 
+
