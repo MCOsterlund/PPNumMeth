@@ -1,0 +1,7 @@
+DEBUGGING EXAMPLE: Calculating the volume of a sphere of radius 1.
+
+The integrated result is: 4.19963609080607, should be 4.18879020478639. Error is 0.0146526417850229. Result is within estimated error: True.
+
+Testing the singular example from the exerecise.
+
+Integrated result is:1.38838294050261, should be 1.39320392968568. Error is 0.0139744293267302. Result is within estimated error: True
