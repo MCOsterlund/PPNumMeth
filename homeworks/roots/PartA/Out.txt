@@ -1,0 +1,9 @@
+Debugging some simple functions.
+
+Roots are: 0.000633316373818523 and 1.57396244284021. Evaluating the roots at this point yields: 6.31300012804319E-07 and 4.71113450220724E-07
+
+Roots are: 1.12218068171188E-08, 0.000425218626468549 and 7.67217773756101E-09. Evaluating the roots at this point yields: 1.12218068171188E-08, 3.83608886878051E-08 and 7.07899165708075E-07
+
+Investigating minima of Rosenbrock's Valley function: f(x,y)=(2-x)^2 + 100*(y-x^2)*x^2
+
+Roots are: 1.99999998335071 and 3.99999993158079. Should be 2 and 4.
