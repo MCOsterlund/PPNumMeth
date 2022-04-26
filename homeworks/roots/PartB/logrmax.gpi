@@ -1,0 +1,10 @@
+set terminal png 
+set output 'rmaxconv.png' 
+set xlabel 'rmax' 
+set ylabel 'Energy' 
+set yrange [-2:2.5] 
+set title 'Energy convergence rmax' 
+set key top right 
+plot 'rmax.txt' index 0 using 1:3 with lines title 'Exact',\ 
+'rmax.txt' index 0 using 1:2 with points pointtype 17 title 'Energy solver' 
+
