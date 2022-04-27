@@ -6,7 +6,7 @@ class main{
 	public static void Main(){
 		double b=0.25, c=5;
 
-		Func<double,vector,vector> F = delegate(delegate t, vector y){
+		Func<double,vector,vector> F = delegate(double t, vector y){
 			double theta=y[0], omega=y[1];
 			return new vector(omega,-b*omega-c*Sin(theta));
 		};

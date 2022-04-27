@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\begin{document}
+\title{Exponential function: Quick and Dirty}
+\author{Martin Cradock Østerlund}
+\maketitle
+
+\begin{abstract}
+    The exponential function is a very important function used in multiple fields in physics. This short paper introduces a 
+    numerical computation of the exponential function, which uses only multiplication and division. I will be comparing it to 
+    the exponential algorithm implemented in C\#. 
+\end{abstract}
+
+\section{Introduction}
+    The "Quick and Dirty" implementation we will be looking at goes as follows.
+    \begin{verbatim}
+    static double ex(double x){
+        if(x<0)return 1/ex(-x);
+        if(x>1.0/8) return Pow(ex(x/2),2);
+        return 1+x*(1+x/2*(1+x/3*(1+x/4*(1+x/5*(1+x/6*(1+x/7*(1+x/8*(1+x/9*(1+x/10)))))))));
+    }
+    \end{verbatim}
+
+    
+
+\end{document}
+    

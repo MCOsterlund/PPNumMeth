@@ -1,0 +1,9 @@
+set terminal png 
+set output 'scipy_example.png' 
+set xlabel 't' 
+set ylabel 'Solution' 
+set yrange[-4.5:3.5] 
+set key top right 
+plot 'Out.txt' index 0 using 1:2 with lines title 'Theta',\ 
+'Out.txt' index 0 using 1:3 with lines title 'Omega' 
+
