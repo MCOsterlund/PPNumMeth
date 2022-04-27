@@ -1,15 +1,15 @@
 DEBUGGING EXAMPLE: Calculating the volume of a sphere of radius 1.
 
-The integrated result is: 4.18529977504948, should be 4.18879020478639. Error is 0.0146513753007166. Result is within estimated error: True.
+The integrated result is: 4.19505802173357, should be 4.18879020478639. Estimated error from is 0.00463133413608843. Deviation from actual result is 0.00626781694718215.
 
 Testing the singular example from the exercise.
 
-Integrated result is:1.39306469227328, should be 1.39320392968568. Error is 0.0170833271418852. Result is within estimated error: True
+Integrated result is: 1.38526927931193, should be 1.39320392968568. Error is 0.00813948010810715. Deviation from actual result is 0.00793465037374497
 
 Debugging of Quasi-random sampling.
 
-The integrated result is: 4.18854516332843, should be 4.18879020478639. Error is 5.2509486675234E-05. Result is within estimated error: False.
+The integrated result is: 4.18876123364364, should be 4.18879020478639. Error is 5.32411791009935E-05. Deviation from actual result is 2.89711427523542E-05.
 
 Testing the singular example from the exercise.
-Integrated result is: 1.37920577018867, should be 1.39320392968568. Error is 0.00455385096326699. Result is within estimated error: False
+Integrated result is: 1.39064511682198, should be 1.39320392968568. Error is 0.00206185712861795. Deviation from the actual result is 0.00255881286369397
 

@@ -36,23 +36,17 @@ public class MCsolve{
         vector x=new vector(dim);
         vector x2=new vector(dim);
 
-        int offset=0;
-        for(int i=0; i<N; i++){
-            vector quas=halton(i+offset,dim,x);
-            vector quas2=halton(i+offset,dim,x2,4);
+        for(int i=1; i<=N; i++){
+            vector quas=halton(i,dim,x);
+            vector quas2=halton(i,dim,x2,4);
             for(int k=0; k<dim; k++){
                 x[k]=a[k]+quas[k]*(b[k]-a[k]);
                 x2[k]=a[k]+quas2[k]*(b[k]-a[k]);
             }
             double fx=f(x); 
             double fx2=f(x2);
-            if(double.IsNaN(fx)||double.IsInfinity(fx)||double.IsNaN(fx2)||double.IsInfinity(fx2)){
-                --i; ++offset;
-            } 
-            else{
                 sum+=fx;
                 sum2+=fx2;
-            }
         }
         double mean=sum/N, mean2=sum2/N;
         var result=(mean*V,Abs(mean*V-mean2*V));

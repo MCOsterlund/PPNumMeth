@@ -14,14 +14,11 @@ class main{
         //Function definition
         Func<vector,double> f_sphere=delegate(vector v){return v[0]*v[0]*Sin(v[1]);};
 
-        int N=100000;
+        int N=1000000;
         (double result,double err)=MCsolve.plainmc(f_sphere,a,b,N);
 
-        bool test;
-        test=Abs(result-4.0*PI/3.0)<=err;
-
         WriteLine("DEBUGGING EXAMPLE: Calculating the volume of a sphere of radius 1.\n");
-        WriteLine($"The integrated result is: {result}, should be {4.0*PI/3.0}. Error is {err}. Result is within estimated error: {test}.\n");
+        WriteLine($"The integrated result is: {result}, should be {4.0*PI/3.0}. Estimated error from is {err}. Deviation from actual result is {Abs(result-4.0*PI/3.0)}.\n");
         
         WriteLine("Testing the singular example from the exercise.\n");
 
@@ -37,25 +34,18 @@ class main{
 
         (double result1,double err1)=MCsolve.plainmc(f_ex,a1,b1,N);
 
-        bool test1;
-        test1=Abs(result1-1.3932039296856768591842462603255) <= err1;
-
-        WriteLine($"Integrated result is:{result1}, should be {1.3932039296856768591842462603255}. Error is {err1}. Result is within estimated error: {test1}\n");
+        WriteLine($"Integrated result is: {result1}, should be {1.3932039296856768591842462603255}. Error is {err1}. Deviation from actual result is {Abs(result1-1.3932039296856768591842462603255)}\n");
 
         WriteLine("Debugging of Quasi-random sampling.\n");    
 
         (double result2,double err2)=MCsolve.MCquasi(f_sphere,a,b,N);
-        bool test2;
-        test2=Abs(result2-4.0*PI/3.0) <= err2;
-        WriteLine($"The integrated result is: {result2}, should be {4.0*PI/3.0}. Error is {err2}. Result is within estimated error: {test2}.\n");
+
+        WriteLine($"The integrated result is: {result2}, should be {4.0*PI/3.0}. Error is {err2}. Deviation from actual result is {Abs(result2-4.0*PI/3.0)}.\n");
 
         WriteLine("Testing the singular example from the exercise.");
 
         (double result3, double err3)=MCsolve.MCquasi(f_ex,a1,b1,N);
 
-        bool test3;
-        test3=Abs(result3-1.3932039296856768591842462603255) <= err3;
-
-        WriteLine($"Integrated result is: {result3}, should be {1.3932039296856768591842462603255}. Error is {err3}. Result is within estimated error: {test3}\n");       
+        WriteLine($"Integrated result is: {result3}, should be {1.3932039296856768591842462603255}. Error is {err3}. Deviation from the actual result is {Abs(result3-1.3932039296856768591842462603255)}\n");       
     }
 }
