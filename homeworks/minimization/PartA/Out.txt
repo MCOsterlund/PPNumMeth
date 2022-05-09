@@ -1,0 +1,8 @@
+Testing minima of the Rosenbrock function.
+
+The calculated minima are x=1.00074881927716 y=1.00150284186095. The minima were found in 4009 steps. The actual minima are supposed to be x=1 and y=1
+
+Testing minima of the Himmelblau function.
+
+The calculated minima are x=2.99999963794392 y=2.00002018530892. The minima were found in 17 steps. The actual minima are supposed to be x=3 and y=2
+
