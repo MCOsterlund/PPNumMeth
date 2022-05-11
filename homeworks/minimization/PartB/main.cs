@@ -45,8 +45,18 @@ class main{
 
     var higgsfit=new StreamWriter("higgsfit.txt");
 
-    for(int i=0; i<E.size; i++){
-        higgsfit.WriteLine($"{E[i]} {BW(xmin,E[i])} {cross[i]} {err[i]}");
+    int k=200;
+    vector energies=new vector(k);
+
+    double splits=(E[E.size-1]-E[0])/k;
+
+    energies[0]=E[0];
+    for(int j=1; j<k; j++){
+        energies[j]+=energies[j-1]+splits;
+    }
+
+    for(int i=0; i<k; i++){
+        higgsfit.WriteLine($"{energies[i]} {BW(xmin,energies[i])}");
     }
     higgsfit.Close();
     }

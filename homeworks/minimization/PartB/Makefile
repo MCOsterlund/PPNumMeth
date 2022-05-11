@@ -1,4 +1,4 @@
-higgs.png: higgsfit.txt Makefile
+higgs.png: higgsfit.txt higgsdata.txt Makefile
 	echo "\
 	set terminal png \n\
 	set output 'higgs.png' \n\
@@ -6,7 +6,7 @@ higgs.png: higgsfit.txt Makefile
 	set ylabel 'Cross sections' \n\
 	set title 'Higgs plot' \n\
 	set key top right \n\
-	plot 'higgsfit.txt' index 0 using 1:3:4 with yerrorbars title 'Data' ,\ \n\
+	plot 'higgsdata.txt' index 0 using 1:2:3 with yerrorbars title 'Data' ,\ \n\
 	'higgsfit.txt' index 0 using 1:2 with lines title 'Fit' \n\
 	"| tee log.gpi|pyxplot
 
@@ -20,4 +20,4 @@ qnewton.dll: qnewton.cs matrix.cs vector.cs
 	mcs -target:library -out:$@ $^
 
 clean:
-	rm -rf *.exe Out.txt higgsfit.txt *.dll
+	rm -rf *.exe Out.txt higgsfit.txt *.dll *.png *.gpi
