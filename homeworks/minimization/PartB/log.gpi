@@ -1,0 +1,9 @@
+set terminal png 
+set output 'higgs.png' 
+set xlabel 'Energies' 
+set ylabel 'Cross sections' 
+set title 'Higgs plot' 
+set key top right 
+plot 'higgsfit.txt' index 0 using 1:3:4 with yerrorbars title 'Data' ,\ 
+'higgsfit.txt' index 0 using 1:2 with lines title 'Fit' 
+
