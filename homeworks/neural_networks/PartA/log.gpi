@@ -1,0 +1,10 @@
+set terminal png 
+set output 'plot.png' 
+set xlabel 'x' 
+set ylabel 'y' 
+set xrange [-1:1] 
+set title 'Neural network test' 
+set key top right 
+plot 'out.txt' index 0 using 1:2 with points pointtype 17 title 'data' ,\ 
+'out.txt' index 1 using 1:2 with lines title 'fit' 
+
