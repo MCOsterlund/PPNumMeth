@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage{graphicx}
 \usepackage{listings}
 \begin{document}
@@ -22,6 +22,16 @@
     }
     \end{verbatim}
 
+    This implementation writes the exponential function as its Taylor series, including the first 10 elements of the series. If 
+    the function recieves a negative value, it calls the function as $exp(-x)^{-1}$. If we supply a value that is lower than some certain
+    precision, in this case $1/8$, the function is called recursively as $exp(x/2)^{2}$ in order to get the required precision. In figure 
+    \ref{fig1}, the comparison between the "Quick and Dirty" implementation and the actual exponential function is shown.
+
+    \begin{figure}
+        \includegraphics{exp_pyxplot.pdf}
+        \caption{The comparison between the exponential function and the "Quick and Dirty" implementation.}
+        \label{fig1}
+    \end{figure}
     
 
 \end{document}

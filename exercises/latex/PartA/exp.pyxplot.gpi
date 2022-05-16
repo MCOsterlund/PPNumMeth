@@ -1,0 +1,10 @@
+set terminal pdf
+set output "exp_pyxplot.pdf"
+set size 7
+set key top left
+set xlabel "$x$"
+set ylabel "exp($x$)"
+set grid 
+plot[][]\
+                "out.txt" using 1:2 with lines title "Quick and Dirty"\
+                ,"out.txt" using 1:3 with points title "tab"

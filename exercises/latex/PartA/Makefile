@@ -1,6 +1,9 @@
 all: exp.pdf
 
-exp.pdf: exp.tex
+exp_pyxplot.pdf: exp.pyxplot.gpi out.txt
+	pyxplot $<
+
+exp.pdf: exp.tex exp_pyxplot.pdf
 	pdflatex $<
 	pdflatex $<
 #	bibtex $<
