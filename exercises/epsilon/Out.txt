@@ -1,9 +1,15 @@
+Maximum/minimum representable integers.
 my max int=2147483647
 my min int=-2147483648
+
+Machine epsilon
 double precision: 2.22044604925031E-16.Pow(2,-52)=2.22044604925031E-16
 float precision: 2.22044604925031E-16.Pow(2,-23)=1.19209289550781E-07
+
+Comparing '1-tiny' and 'tiny-1'.
 sumA-1=0.000000e+000 should be 1.110223e-010
 sumB-1=1.110223e-010 should be 1.110223e-010
+
 Test of the approximation method
 Checking a=1, b=1: True
 Checking a=1, b=2: False
