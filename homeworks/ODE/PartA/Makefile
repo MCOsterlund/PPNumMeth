@@ -31,4 +31,4 @@ ode.dll: ode.cs matrix.cs vector.cs
 	mcs -target:library -out:$@ $^
 
 clean:
-		rm -rf *.dll *.exe *.txt
+		rm -rf *.dll *.exe debug.txt Out.txt *.png *.gpi

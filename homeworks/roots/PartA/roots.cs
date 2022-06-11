@@ -33,7 +33,6 @@ public class rootfinder{
                 l/=2;
             }while(f(x0+l*Deltax).norm()>(1-l/2)*f(x0).norm() && l>1.0/32);
             x0+=l*Deltax;
-            Error.WriteLine($"{f(x0).norm()}");
         }while(f(x0).norm()>eps);
         return x0;
     }

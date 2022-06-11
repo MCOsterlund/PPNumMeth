@@ -2,7 +2,7 @@ using static System.Console;
 
 public class genlist<T>{
 	public T[] data;
-	public int size=0, capacity=8;
+	public int size=0, capacity=10;
 	public genlist(){data=new T[capacity];}
 	public void push(T item){
 		if(size==capacity){

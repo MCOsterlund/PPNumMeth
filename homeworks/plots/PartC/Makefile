@@ -16,7 +16,7 @@ gamma.complex.png: gamma.complex.txt Makefile
 	" |tee log.gpi |pyxplot
 
 gamma.complex.txt: main.exe
-	mono $< 1> $@ 2>log
+	mono main.exe > gamma.complex.txt
 
 main.exe: main.cs cmath.dll
 	mcs $< -target:exe -reference:cmath.dll main.cs -out:$@

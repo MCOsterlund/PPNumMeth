@@ -20,4 +20,4 @@ leastsquares.dll:leastsquares.cs QRGS.cs matrix.cs vector.cs
 	mcs -target:library -out:$@ $^
 
 clean:
-	rm -rf *.exe *.txt *.dll
+	rm -rf *.exe Out_format.txt Out.txt fit.txt *.dll *.png *.gpi

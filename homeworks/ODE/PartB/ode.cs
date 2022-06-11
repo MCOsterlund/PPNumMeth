@@ -18,14 +18,27 @@ public class ODE{
         do{
             if(x>=b) return y;
             if(x+h>b) h=b-x;
+
             var (yh,erv)=rk12step(F,x,y,h);
             vector tol=new vector(y.size);
-            for(int i=0;i<tol.size;i++)tol[i]=Max(acc,yh[i]*eps)*Sqrt(h/(b-a));
+            for(int i=0;i<tol.size;i++){
+                tol[i]=Max(acc,yh[i]*eps)*Sqrt(h/(b-a));
+            }
             bool ok=true;
-            for(int i=0; i<tol.size;i++) ok=(ok && erv[i]<tol[i]);
-            if(ok) {x+=h; y=yh; xs.push(x); ys.push(y);}
+            for(int i=0; i<tol.size;i++){
+                ok=(ok && erv[i]<tol[i]);
+            }
+
+            if(ok) {
+                x+=h; 
+                y=yh; 
+                xs.push(x);
+                ys.push(y);
+            }
             double factor=tol[0]/Abs(erv[0]);
-            for(int i=1;i<tol.size;i++) factor=Min(factor,tol[i]/Abs(erv[i]));
+            for(int i=1;i<tol.size;i++){
+                 factor=Min(factor,tol[i]/Abs(erv[i]));
+            }
             h*=Min( Pow(factor,0.25)*0.95 , 2);
         }while(true);
     }//driver

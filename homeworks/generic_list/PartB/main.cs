@@ -16,11 +16,6 @@ public static void Main(){
 	list.remove(1);
 	WriteLine("The second element has been removed. The new list is");
 	list.print();
-	list.push(77);
-	list.push(88);
-	list.print();
-	list.remove(list.size-2);
-	list.print();
-		}
+	}
 }
 

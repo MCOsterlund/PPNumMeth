@@ -1,4 +1,4 @@
-py_comp.png:Out.txt py_comp.txt Makefile
+py_comp.png:py_comp.txt Makefile
 	echo "\
 	set terminal png \n\
 	set output 'py_comp.png' \n\
@@ -11,7 +11,7 @@ py_comp.png:Out.txt py_comp.txt Makefile
 	'py_comp.txt' index 0 using 1:3 with lines title 'Omega' \n\
 	" |tee log_pycomp.gpi|pyxplot
 
-Out.txt py_comp.txt: main.exe
+py_comp.txt: main.exe
 	mono $< > $@
 
 main.exe: main.cs ode.dll

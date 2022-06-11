@@ -8,4 +8,4 @@ main.exe: main.cs
 	mcs -target:exe main.cs # -out:$^ $@
 
 clean:
-	rm -rf *.txt *.exe *.dll
+	rm -rf Out.txt *.exe *.dll

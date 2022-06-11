@@ -1,10 +1,10 @@
 Intgrals from 0 to 1 of various functions: 
 
-Sqrt(x)=0.666953909054655 
+Sqrt(x)=0.666953909054655. Should be 0. 
 
-1/Sqrt(x)=1.99996150007805 
+1/Sqrt(x)=1.99996150007805. Should be 2. 
 
-4*Sqrt(1-x^2)=3.14183457802727 
+4*Sqrt(1-x^2)=3.14183457802727. Should be 3.14159265358979. 
 
-Log(x)/Sqrt(x)=-3.99991705899915 
+Log(x)/Sqrt(x)=-3.99991705899915. Should be -4. 
 

@@ -36,7 +36,7 @@ qsplinesq.png qspline1.png qsplinex.png: Out.txt xones.txt yx.txt tabvals.txt Ma
 	set xlabel 'x' \n\
 	set ylabel 'y' \n\
 	set xrange [1:5] \n\
-	set yrange [1:15] \n\
+	set yrange [0:15] \n\
 	set xtics 1,1,5 \n\
 	set ytics 0,2,15 \n\
 	set title 'Quadratic Spline: y equals x' \n\

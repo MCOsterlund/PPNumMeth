@@ -3,7 +3,7 @@ set output 'qsplinex.png'
 set xlabel 'x' 
 set ylabel 'y' 
 set xrange [1:5] 
-set yrange [1:15] 
+set yrange [0:15] 
 set xtics 1,1,5 
 set ytics 0,2,15 
 set title 'Quadratic Spline: y equals x' 

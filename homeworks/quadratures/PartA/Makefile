@@ -21,4 +21,4 @@ quad.dll: quad.cs
 	mcs -target:library -out:$@ $< 
 
 clean:
-		rm -rf *.txt *.dll *.exe *.png *.gpi
+		rm -rf Out.txt erf_calc.txt *.dll *.exe *.png *.gpi

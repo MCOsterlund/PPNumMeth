@@ -15,3 +15,6 @@ erf.data.txt: main.exe
 
 %.exe: %.cs
 	mcs $<
+
+clean:
+	rm -rf *.png erf.data.txt *.gpi *.exe

@@ -11,4 +11,4 @@ genlist.dll: genlist.cs
 	mcs -target:library -out:$@ $<
 
 clean:
-	rm -rf *.dll *.exe *.data
+	rm -rf *.dll *.exe *.data *.txt

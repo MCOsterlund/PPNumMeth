@@ -12,9 +12,6 @@ class main{
 	}
 
 	static public void Main(){
-Error.WriteLine($"G(1)={gamma((complex)1.0)}");
-Error.WriteLine($"G(2)={gamma((complex)2.0)}");
-Error.WriteLine($"G(3)={gamma((complex)3.0)}");
 		double dx=1.0/16, shift=dx/2;
 		for(double R=-4+shift; R<4; R+=dx){
 		for(double Ima=-4+shift; Ima<=4; Ima+=dx){
