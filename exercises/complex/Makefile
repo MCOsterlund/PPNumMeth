@@ -10,3 +10,6 @@ cmath.dll: $(CMATHDIR)/cmath.cs $(CMATHDIR)/complex.cs
 
 main.exe: main.cs cmath.dll
 	mcs -reference:cmath.dll main.cs
+
+clean:
+	rm -rf *.exe *.txt *.dll

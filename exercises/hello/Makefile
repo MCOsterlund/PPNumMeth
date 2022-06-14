@@ -11,7 +11,7 @@ hello.exe: hello.cs #hello.exe depends on hello.cs
 
 .PHONEY: clean #A phoney target with no dependencies
 clean:
-	rm -rf Out.txt hello.exe #Removes secondary files
+	rm -rf out.txt hello.exe #Removes secondary files
 
 test:
 	echo $(MCS) #Displays $(MCS) as a line of text. Essentially it prints "hello"

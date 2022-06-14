@@ -8,15 +8,15 @@ public class data {public int a,b;public double sum;}
 
 public static void harm(object obj){
 	data d=(data)obj;
-	WriteLine($"harm: Summing from {d.a} to {d.b}");
+	WriteLine($"harm: Summing from {d.a} to {d.b}\n");
 	d.sum=0; for(int i=d.a;i<d.b;i++)d.sum+=1.0/i; //The C# way: From 0 to N-1.
-	WriteLine($"harm: sum={d.sum}");
+	WriteLine($"harm: sum={d.sum}\n");
 	
 }
 	public static void Main(string[] args){
 		int N=(int)1e8;
 		if(args.Length>0) N = (int)double.Parse(args[0]);
-		WriteLine($"N={(float)N}");
+		WriteLine($"Calculating harmonic sum up to N={(float)N} using two threads\n");
 		data x=new data();
 		x.a=1; x.b=N/2;
 		data y=new data();

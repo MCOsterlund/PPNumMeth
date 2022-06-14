@@ -16,4 +16,4 @@ main.exe: main.cs
 	mcs -target:exe -out:$@ $<
 
 clean:
-	rm -rf *.exe *.log *.aux *.pdf
+	rm -rf *.exe *.log *.aux *.pdf *.txt

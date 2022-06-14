@@ -22,4 +22,4 @@ integrate.dll: integrate.cs
 	mcs -target:library -out:integrate.dll integrate.cs 
 
 clean:
-	rm -rf *.dll *.exe *.txt
+	rm -rf *.dll *.exe *.txt *.gpi *.png
