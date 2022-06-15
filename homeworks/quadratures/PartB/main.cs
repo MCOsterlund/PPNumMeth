@@ -27,5 +27,7 @@ class main{
         WriteLine($"The integral of 1/Sqrt(x)={Q1_CC}. Should be 2. Number of steps: {i}");
         WriteLine($"The integral of Log(x)/Sqrt(x)={Q2_CC}. Should be -4. Number of steps: {j}\n");
 
+        var py_text=new System.IO.StreamReader("py_comp.txt");
+        WriteLine(py_text.ReadToEnd());
     }//Main
 }//main
