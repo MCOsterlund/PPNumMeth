@@ -18,7 +18,7 @@ class main{
         double Q4=integrate.quad(fs4,a,b);
 
         WriteLine("Intgrals from 0 to 1 of various functions: \n");
-        WriteLine($"Sqrt(x)={Q1}. Should be {2/3}. \n");
+        WriteLine($"Sqrt(x)={Q1}. Should be {0.667}. \n");
         WriteLine($"1/Sqrt(x)={Q2}. Should be {2}. \n");
         WriteLine($"4*Sqrt(1-x^2)={Q3}. Should be {PI}. \n");
         WriteLine($"Log(x)/Sqrt(x)={Q4}. Should be {-4}. \n");

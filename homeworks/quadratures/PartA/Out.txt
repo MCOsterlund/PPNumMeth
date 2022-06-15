@@ -1,6 +1,6 @@
 Intgrals from 0 to 1 of various functions: 
 
-Sqrt(x)=0.666953909054655. Should be 0. 
+Sqrt(x)=0.666953909054655. Should be 0.667. 
 
 1/Sqrt(x)=1.99996150007805. Should be 2. 
 
