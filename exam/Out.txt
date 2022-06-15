@@ -1,0 +1,15 @@
+This is a comparison of the regular quadrature algorithm from the homeworks, which performed two subdivisions, with our new algorithm, which performs 3 subdivisions
+
+Trial functions: f1(x)=Sqrt(x), f2=1/Sqrt(x), f3=4*Sqrt(1-x^2) and f4(x)=Log(x)/Sqrt(x).
+
+-------COMPARISONS-------
+
+The integral of Sqrt(x). Using 2 subdivision routine we get 0.666953909054655 in 16 steps. Using 3 subdivisions we get 0.667738328768327 in 9 steps. Actual result is 0.667.
+
+The integral of 1/Sqrt(x). Using 2 subdivision routine we get 1.99996150007805 in 8572 steps. Using 3 subdivisions we get 1.99972669114819 in 105 steps. Actual result is 2.
+
+The integral of 4*Sqrt(1-x^2). Using 2 subdivision routine we get 3.14183457802727 in 28 steps. Using 3 subdivisions we get 3.14187399209525 in 21 steps. Actual result is 3.14159265358979.
+
+The integral of Log(x)/Sqrt(x). Using 2 subdivision routine we get -3.99991705899915 in 8604 steps. Using 3 subdivisions we get -3.99985960060988 in 273 steps. Actual result is -4.
+
+In conclusion: The three subdivision routine is generally much faster than the two subdivision routine.
