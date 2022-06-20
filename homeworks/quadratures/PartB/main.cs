@@ -29,7 +29,5 @@ class main{
 
         var py_text=new System.IO.StreamReader("py_comp.txt");
         WriteLine(py_text.ReadToEnd());
-
-        //Test
     }//Main
 }//main
