@@ -35,7 +35,7 @@ class main{
 
         WriteLine("-------COMPARISONS-------\n");
 
-        WriteLine($"The integral of Sqrt(x). Using 2 subdivision routine we get {Q1} in {i1} steps. Using 3 subdivisions we get {Q5} in {i2} steps. Actual result is {0.667}.\n");
+        WriteLine($"The integral of Sqrt(x). Using 2 subdivision routine we get {Q1} in {i1} steps. Using 3 subdivisions we get {Q5} in {i2} steps. Actual result is {2.0/3}.\n");
         WriteLine($"The integral of 1/Sqrt(x). Using 2 subdivision routine we get {Q2} in {j1} steps. Using 3 subdivisions we get {Q6} in {j2} steps. Actual result is {2}.\n");
         WriteLine($"The integral of 4*Sqrt(1-x^2). Using 2 subdivision routine we get {Q3} in {k1} steps. Using 3 subdivisions we get {Q7} in {k2} steps. Actual result is {PI}.\n");
         WriteLine($"The integral of Log(x)/Sqrt(x). Using 2 subdivision routine we get {Q4} in {l1} steps. Using 3 subdivisions we get {Q8} in {l2} steps. Actual result is {-4}.\n");

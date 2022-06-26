@@ -4,7 +4,7 @@ Trial functions: f1(x)=Sqrt(x), f2=1/Sqrt(x), f3=4*Sqrt(1-x^2) and f4(x)=Log(x)/
 
 -------COMPARISONS-------
 
-The integral of Sqrt(x). Using 2 subdivision routine we get 0.666953909054655 in 16 steps. Using 3 subdivisions we get 0.667738328768327 in 9 steps. Actual result is 0.667.
+The integral of Sqrt(x). Using 2 subdivision routine we get 0.666953909054655 in 16 steps. Using 3 subdivisions we get 0.667738328768327 in 9 steps. Actual result is 0.666666666666667.
 
 The integral of 1/Sqrt(x). Using 2 subdivision routine we get 1.99996150007805 in 8572 steps. Using 3 subdivisions we get 1.99972669114819 in 105 steps. Actual result is 2.
 
